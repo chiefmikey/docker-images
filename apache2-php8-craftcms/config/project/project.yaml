@@ -1,0 +1,17 @@
+dateModified: 1623794544
+email:
+  fromEmail: team@chiadecentral.com
+  fromName: 'Chia Decentral'
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: 'Chia Decentral'
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
