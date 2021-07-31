@@ -11,4 +11,4 @@ Back end construction of fully customized Docker images
 
 ## Images
 
-### [Apache2-PHP8-CraftCMS](https://github.com/chiefmikey/docker-images/tree/main/apache2-php8-craftcms)
+### [CraftCMS](https://github.com/chiefmikey/docker-images/tree/main/craftcms)

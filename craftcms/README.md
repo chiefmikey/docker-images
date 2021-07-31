@@ -1,12 +1,12 @@
-# **Apache 2 - PHP 8 - CraftCMS**
+# **CraftCMS**
 
-An Apache 2 server rendering a fresh CraftCMS installation with PHP 8 by
-proxying to PHP-FPM for headless operation.
+This Alpine-based image runs Apache 2 serving a clean CraftCMS installation with
+PHP 8 using PHP-FPM.
 
 _This image requires minimal configuration to launch and successfully render the
 CraftCMS admin installation page._
 
-[Available on Docker Hub](https://hub.docker.com/repository/docker/chiefmikey/apache2-php8-craftcms)
+[Available on Docker Hub](https://hub.docker.com/repository/docker/chiefmikey/craftcms)
 
 ## **Getting Started**
 
@@ -29,18 +29,15 @@ php craft setup/security-key
 - The `license.key` file located in the `/config` directory will be populated as
   part of the final CraftCMS client installation as well.
 
-Navigate to the CraftCMS admin page: http://localhost:3000/admin
-
-Follow the prompts until installation is complete.
+Navigate to the CraftCMS admin page (ex. http://localhost:3000/admin) and follow
+the prompts until installation is complete.
 
 ## Examples
 
 Dockerfile
 
 ```shell
-cd apache2-php8-craftcms
-php craft setup/app-id
-php craft setup/security-key
+cd craftcms
 docker build -t NAME/TAG:VERSION .
 docker run -d -p 3000:3000 NAME/TAG:VERSION
 ```
@@ -50,7 +47,7 @@ docker-compose.yaml
 ```js
 services:
   api:
-    image: chiefmikey/apache2-php8-craftcms:latest
+    image: chiefmikey/craftcms:latest
     volumes:
       - .env:/craft/.env:ro
       - license.key:/craft/config/license.key:ro
