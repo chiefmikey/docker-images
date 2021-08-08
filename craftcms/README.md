@@ -6,7 +6,7 @@ PHP 8 using PHP-FPM.
 _This image requires minimal configuration to launch and successfully render the
 CraftCMS admin installation page._
 
-[Available on Docker Hub](https://hub.docker.com/repository/docker/chiefmikey/craftcms)
+[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/craftcms)
 
 ## **Getting Started**
 
