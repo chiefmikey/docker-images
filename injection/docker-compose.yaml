@@ -1,32 +1,29 @@
 services:
-  db:
-    container_name: db
-    image: chiefmikey/cassandra:latest
+  target:
+    container_name: target
+    image: chiefmikey/koa:latest
     networks:
-      - ng-network
+      - inject-net
     ports:
-      - '9042:9042'
-    volumes:
-      - cassandra-data:/var/lib/cassandra
+      - 80:8080
     healthcheck:
-      test:
-        cd /cassandra/apache-cassandra-4.0.0 && su -s /bin/bash -c 'bin/cqlsh
-        --debug' cassandra
+      test: node healthcheck.js
       interval: 10s
       timeout: 10s
       retries: 10
 
-  db_helper:
-    container_name: db_helper
-    image: chiefmikey/cass-helper:latest
+  injection:
+    container_name: injection
+    image: chiefmikey/injection:latest
     networks:
-      - ng-network
+      - inject-net
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      db:
+      target:
         condition: service_healthy
 
-volumes:
-  cassandra-data:
-
 networks:
-  ng-network:
+  inject-net:
