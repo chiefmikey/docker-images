@@ -21,10 +21,6 @@ services:
     image: chiefmikey/cass-helper:latest
     networks:
       - ng-network
-    cap_add:
-      - NET_ADMIN
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       db:
         condition: service_healthy
