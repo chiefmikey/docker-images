@@ -1,0 +1,36 @@
+services:
+  db:
+    container_name: db
+    image: chiefmikey/cassandra:latest
+    networks:
+      - ng-network
+    ports:
+      - '9042:9042'
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+    healthcheck:
+      test:
+        cd /cassandra/apache-cassandra-4.0.0 && su -s /bin/bash -c 'bin/cqlsh
+        --debug' cassandra
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  db_helper:
+    container_name: db_helper
+    image: chiefmikey/cass-helper:latest
+    networks:
+      - ng-network
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  cassandra-data:
+
+networks:
+  ng-network:
