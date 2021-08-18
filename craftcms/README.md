@@ -1,10 +1,10 @@
 # **CraftCMS**
 
-This Alpine-based image runs Apache 2 serving a clean CraftCMS installation with
-PHP 8 using PHP-FPM.
+This Alpine-based image runs Apache 2 serving a fresh CraftCMS installation with
+PHP 8 using PHP-FPM
 
 _This image requires minimal configuration to launch and successfully render the
-CraftCMS admin installation page._
+CraftCMS admin installation page_
 
 [Available on Docker Hub](https://hub.docker.com/r/chiefmikey/craftcms)
 
