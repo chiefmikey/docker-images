@@ -1,0 +1,35 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "Koa server setup",
+  "homepage": "https://github.com/chiefmikey/docker-images/tree/main#readme",
+  "bugs": {
+    "url": "https://github.com/chiefmikey/docker-images/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefmikey/docker-images.git#main"
+  },
+  "keywords": [
+    "koa",
+    "chiefmikey"
+  ],
+  "license": "MIT",
+  "author": "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)",
+  "contributors": [
+    "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)"
+  ],
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-static": "^5.0.0",
+    "path": "^0.12.7"
+  }
+}
