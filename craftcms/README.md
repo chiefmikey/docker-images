@@ -34,12 +34,14 @@ the prompts until installation is complete.
 
 ## Examples
 
-Dockerfile
+Clone and build Dockerfile
 
 ```shell
-cd craftcms
-docker build -t NAME/TAG:VERSION .
-docker run -d -p 3000:3000 NAME/TAG:VERSION
+git clone https://github.com/chiefmikey/docker-images
+cd docker-images/craftcms
+# update .env contents
+docker build -t [NAME]/[TAG]:[VERSION] .
+docker run -d -p 3000:3000 [NAME]/[TAG]:[VERSION]
 ```
 
 docker-compose.yaml
