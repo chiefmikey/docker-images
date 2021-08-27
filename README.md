@@ -1,6 +1,6 @@
 # Docker Images
 
-Monorepo of custom built Alpine-based Docker images
+Custom solutions built as Alpine-based Docker images
 
 <table>
   <thead>
