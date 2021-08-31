@@ -12,7 +12,7 @@ Custom solutions built as Alpine-based Docker images
   <tbody>
     <tr>
       <td valign="top">
- <a href="https://github.com/chiefmikey/docker-images/tree/main/injection" target="_blank">Injection</a>
+ <a href="https://github.com/chiefmikey/docker-images/tree/main/inject" target="_blank">Inject</a>
       </td>
       <td valign="top">
     Externally inject shell commands

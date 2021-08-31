@@ -1,4 +1,4 @@
-# **CraftCMS**
+# **Alpine CraftCMS**
 
 An Alpine-based image running Apache 2 serving a fresh CraftCMS installation with
 PHP 8 using PHP-FPM
@@ -6,7 +6,7 @@ PHP 8 using PHP-FPM
 _This image requires minimal configuration to launch and successfully render the
 CraftCMS admin installation page_
 
-[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/craftcms)
+[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-craftcms)
 
 ## **Getting Started**
 
@@ -38,7 +38,7 @@ Clone and build Dockerfile
 
 ```shell
 git clone https://github.com/chiefmikey/docker-images
-cd docker-images/craftcms
+cd docker-images/alpine-craftcms
 # update .env contents
 docker build -t [NAME]/[TAG]:[VERSION] .
 docker run -d -p 3000:3000 [NAME]/[TAG]:[VERSION]
@@ -49,7 +49,7 @@ docker-compose.yaml
 ```js
 services:
   api:
-    image: chiefmikey/craftcms:latest
+    image: chiefmikey/alpine-craftcms:latest
     volumes:
       - .env:/craft/.env:ro
       - license.key:/craft/config/license.key:ro

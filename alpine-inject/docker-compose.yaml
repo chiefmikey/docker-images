@@ -12,9 +12,9 @@ services:
       timeout: 10s
       retries: 10
 
-  injection:
-    container_name: injection
-    image: chiefmikey/injection:latest
+  inject:
+    container_name: inject
+    image: chiefmikey/alpine-inject:latest
     networks:
       - inject-net
     cap_add:
