@@ -12,7 +12,7 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: ["alpine-koa"] # Location of package manifests
     schedule:
-    interval: "daily"
+      interval: "daily"
   - package-ecosystem: "npm" # See documentation for possible values
     directory: ["alpine-inject"] # Location of package manifests
     schedule:
@@ -20,4 +20,4 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: ["alpine-craftcms"] # Location of package manifests
     schedule:
-    interval: "daily"
+      interval: "daily"
