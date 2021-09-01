@@ -6,6 +6,18 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: ["alpine-cassandra", "alpine-koa", "alpine-inject", "alpine-craftcms"] # Location of package manifests
+    directory: ["alpine-cassandra"] # Location of package manifests
     schedule:
       interval: "daily"
+  - package-ecosystem: "npm" # See documentation for possible values
+  directory: ["alpine-koa"] # Location of package manifests
+  schedule:
+    interval: "daily"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: ["alpine-inject"] # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm" # See documentation for possible values
+  directory: ["alpine-craftcms"] # Location of package manifests
+  schedule:
+    interval: "daily"
