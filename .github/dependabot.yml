@@ -6,6 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "*/" # Location of package manifests
+    directory: ["alpine-cassandra", "alpine-koa", "alpine-inject", "alpine-craftcms"] # Location of package manifests
     schedule:
       interval: "daily"
