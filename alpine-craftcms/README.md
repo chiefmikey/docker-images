@@ -34,17 +34,17 @@ the prompts until installation is complete.
 
 ## Examples
 
-Clone and build Dockerfile
+Build and run with Dockerfile
 
 ```shell
 git clone https://github.com/chiefmikey/docker-images
-cd docker-images/alpine-craftcms
+cd docker-images/alpine-craftcms.git
 # update .env contents
 docker build -t [NAME]/[TAG]:[VERSION] .
 docker run -d -p 3000:3000 [NAME]/[TAG]:[VERSION]
 ```
 
-docker-compose.yaml
+Run with Compose
 
 ```js
 services:
