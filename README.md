@@ -15,7 +15,7 @@ Custom solutions built as Alpine-based Docker images
         <a
           href="https://github.com/chiefmikey/docker-images/tree/main/alpine-inject"
           target="_blank"
-          >Inject</a
+          >Alpine Inject</a
         >
       </td>
       <td valign="top">Externally inject shell commands</td>
@@ -25,7 +25,7 @@ Custom solutions built as Alpine-based Docker images
         <a
           href="https://github.com/chiefmikey/docker-images/tree/main/cassandra"
           target="_blank"
-          >Cassandra</a
+          >Alpine Cassandra</a
         >
       </td>
       <td valign="top">Apache Cassandra 4.0.0 database</td>
@@ -35,7 +35,7 @@ Custom solutions built as Alpine-based Docker images
         <a
           href="https://github.com/chiefmikey/docker-images/tree/main/koa"
           target="_blank"
-          >Koa</a
+          >Alpine Koa</a
         >
       </td>
       <td valign="top">Koa server with a routing skeleton</td>
@@ -45,7 +45,7 @@ Custom solutions built as Alpine-based Docker images
         <a
           href="https://github.com/chiefmikey/docker-images/tree/main/craftcms"
           target="_blank"
-          >CraftCMS</a
+          >Alpine CraftCMS</a
         >
       </td>
       <td valign="top">Fresh CraftCMS installation</td>
