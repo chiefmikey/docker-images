@@ -28,7 +28,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine Cassandra</a
         >
       </td>
-      <td valign="top">Apache Cassandra 4.0.0 database</td>
+      <td valign="top">Apache Cassandra database</td>
     </tr>
     <tr>
       <td valign="top">
