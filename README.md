@@ -23,7 +23,7 @@ Custom solutions built as Alpine-based Docker images
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/cassandra"
+          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-cassandra"
           target="_blank"
           >Alpine Cassandra</a
         >
@@ -33,7 +33,7 @@ Custom solutions built as Alpine-based Docker images
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/koa"
+          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-koa"
           target="_blank"
           >Alpine Koa</a
         >
@@ -43,7 +43,7 @@ Custom solutions built as Alpine-based Docker images
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/craftcms"
+          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-craftcms"
           target="_blank"
           >Alpine CraftCMS</a
         >
