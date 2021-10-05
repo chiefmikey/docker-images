@@ -21,15 +21,11 @@ docker pull chiefmikey/alpine-cassandra:latest
 Run the container with environment variable `CASSANDRA_VERSION` specifying which
 release to install or the default (4.0.0) will be used
 
-### Examples
-
-#### Docker Run
+## Examples
 
 ```sh
 docker run --name cassandra -d --restart unless-stopped --env CASSANDRA_VERSION=4.0.0 chiefmikey/alpine-cassandra:latest`
 ```
-
-#### Docker Compose
 
 ```yaml
 # docker-compose.yaml
