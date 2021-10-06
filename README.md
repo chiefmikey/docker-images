@@ -48,7 +48,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine CraftCMS</a
         >
       </td>
-      <td valign="top">A new CraftCMS installation with PHP 8</td>
+      <td valign="top">Serve a new CraftCMS installation</td>
     </tr>
   </tbody>
 </table>
