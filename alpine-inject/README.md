@@ -1,6 +1,6 @@
 # **Alpine Inject**
 
-Connect to other containers to externally inject shell commands when triggered
+Connect to other containers to externally inject shell commands
 
 _This image requires minimal configuration to inject commands, extra useful when
 combined with healthcheck_
