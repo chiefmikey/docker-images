@@ -48,7 +48,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine CraftCMS</a
         >
       </td>
-      <td valign="top">Fresh CraftCMS installation</td>
+      <td valign="top">CraftCMS installation</td>
     </tr>
   </tbody>
 </table>
