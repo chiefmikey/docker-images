@@ -1,6 +1,6 @@
 # **Alpine Koa**
 
-Run a Koa server with a routing skeleton
+Run a Koa server with a routing template on a specified port
 
 _This image requires minimal configuration to launch Koa on a specified port_
 
@@ -19,10 +19,22 @@ docker pull chiefmikey/alpine-koa:latest
 Run the container with a published port and environment variable `PORT`
 specifying where Koa should listen or the default (8080) will be used
 
+The container includes `healthcheck.js` which can be run with node and used to
+monitor the port connection
+
 ## Examples
 
 ```sh
-docker run --name koa -d --restart unless-stopped -p 3000:3000 --env PORT=3000 chiefmikey/alpine-koa:latest
+docker run -d \
+  --name koa \
+  --env PORT=3000 \
+  -p 3000:3000 \
+  --restart unless-stopped \
+  --health-cmd='node healthcheck.js' \
+  --health-interval=10s \
+  --health-timeout=10s
+  --health-retries=10
+  chiefmikey/alpine-koa:latest
 ```
 
 ```yaml
