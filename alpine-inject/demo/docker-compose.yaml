@@ -11,6 +11,8 @@ services:
       interval: 10s
       timeout: 10s
       retries: 10
+    environment:
+      - PORT=8080
 
   inject:
     container_name: inject
