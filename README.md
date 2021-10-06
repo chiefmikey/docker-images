@@ -38,7 +38,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine Koa</a
         >
       </td>
-      <td valign="top">Koa server with a routing template</td>
+      <td valign="top">Run a Koa server with a routing template</td>
     </tr>
     <tr>
       <td valign="top">
@@ -48,7 +48,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine CraftCMS</a
         >
       </td>
-      <td valign="top">CraftCMS installation</td>
+      <td valign="top">A new CraftCMS installation with PHP 8</td>
     </tr>
   </tbody>
 </table>
