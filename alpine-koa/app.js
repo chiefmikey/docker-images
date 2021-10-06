@@ -5,8 +5,6 @@ import serve from 'koa-static';
 import path from 'path';
 import index from './routes/index.js';
 
-const __dirname = import.meta.url.slice(7, import.meta.url.lastIndexOf('/'));
-
 const port = process.env.PORT || 8080;
 
 const app = new Koa();
@@ -21,7 +19,7 @@ app
     }),
   )
   .use(bodyParser())
-  .use(serve(path.join(__dirname, '/client/public')))
+  .use(serve(path.join(path.resolve(), '/client/public')))
   .use(index.routes())
   .use(index.allowedMethods());
 
