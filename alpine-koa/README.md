@@ -22,7 +22,7 @@ specifying where Koa should listen or the default (8080) will be used
 ## Examples
 
 ```sh
-docker run --name koa -d --restart unless-stopped -p 3000:3000 --env PORT=3000 chiefmikey/alpine-koa:latest`
+docker run --name koa -d --restart unless-stopped -p 3000:3000 --env PORT=3000 chiefmikey/alpine-koa:latest
 ```
 
 ```yaml
