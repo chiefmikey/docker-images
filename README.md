@@ -28,7 +28,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine Cassandra</a
         >
       </td>
-      <td valign="top">Apache Cassandra database</td>
+      <td valign="top">Initialize an Apache Cassandra database</td>
     </tr>
     <tr>
       <td valign="top">
@@ -38,7 +38,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine Koa</a
         >
       </td>
-      <td valign="top">Koa server with a routing skeleton</td>
+      <td valign="top">Koa server with a routing template</td>
     </tr>
     <tr>
       <td valign="top">
