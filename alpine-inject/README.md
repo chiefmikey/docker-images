@@ -2,7 +2,8 @@
 
 Connect to other containers to externally inject shell commands when triggered
 
-_This image requires minimal configuration to inject commands, extra useful when combined with healthcheck_
+_This image requires minimal configuration to inject commands, extra useful when
+combined with healthcheck_
 
 [Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-inject)
 
@@ -16,13 +17,17 @@ docker pull chiefmikey/alpine-inject:latest
 
 ### Configure
 
-Run the container with environment variable `INJECT_COMMAND` as the command or string of commands to inject
+Run the container on the same network as the target with environment variable
+`INJECT_COMMAND` as the command or string of commands to inject at startup
 
 ## Examples
 
-docker-compose.yaml
+```sh
+docker run --name inject -d -v /var/run/docker.sock:/var/run/docker.sock --network=inject-net --env-file inject.env chiefmikey/alpine-inject:latest`
+```
 
 ```yaml
+#docker-compose.yaml
 services:
   inject:
     container_name: inject
@@ -40,12 +45,13 @@ services:
       - inject.env
 ```
 
-inject.env
-
 ```env
+#inject.env
 INJECT_COMMAND="
-  command 1;
-  command 2;
-  command 3;
+  echo 'command 1';
+  echo 'command 2';
+  echo 'command 3';
 "
 ```
+
+### [View Demo](https://github.com/chiefmikey/docker-images/tree/main/alpine-inject/demo)
