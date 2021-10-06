@@ -1,6 +1,6 @@
 # **Alpine CraftCMS**
 
-An Alpine-based image running Apache 2 serving a fresh CraftCMS installation with
+Run Apache 2 serving a new CraftCMS installation with
 PHP 8 using PHP-FPM
 
 _This image requires minimal configuration to launch and successfully render the
