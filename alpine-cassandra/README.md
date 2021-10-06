@@ -28,7 +28,7 @@ docker run -d \
   --env CASSANDRA_VERSION=4.0.1 \
   --restart unless-stopped \
   -v cassandra-data:/var/lib/cassandra \
-  --health-cmd='su -s /opt/cassandra/bin/bash -c 'bin/cqlsh --debug' cassandra' \
+  --health-cmd='su -s /opt/cassandra/bin/bash -c "bin/cqlsh --debug" cassandra' \
   --health-interval=10s \
   --health-timeout=10s \
   --health-retries=10 \
