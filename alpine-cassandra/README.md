@@ -23,7 +23,12 @@ release to install or the default (4.0.0) will be used
 ## Examples
 
 ```sh
-docker run --name cassandra -d --restart unless-stopped -v cassandra-data:/var/lib/cassandra --env CASSANDRA_VERSION=4.0.1 chiefmikey/alpine-cassandra:latest`
+docker run -d \
+  --name cassandra \
+  --env CASSANDRA_VERSION=4.0.1 \
+  --restart unless-stopped \
+  -v cassandra-data:/var/lib/cassandra \
+  chiefmikey/alpine-cassandra:latest
 ```
 
 ```yaml
