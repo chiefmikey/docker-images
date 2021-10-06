@@ -1,6 +1,6 @@
 # **Alpine CraftCMS**
 
-Run Apache 2 serving a new CraftCMS installation with
+Runs Apache 2 to serve a new CraftCMS installation with
 PHP 8 using PHP-FPM
 
 _This image requires minimal configuration to launch and successfully render the
