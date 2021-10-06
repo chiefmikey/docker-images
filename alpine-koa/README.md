@@ -32,8 +32,8 @@ docker run -d \
   --restart unless-stopped \
   --health-cmd='node healthcheck.js' \
   --health-interval=10s \
-  --health-timeout=10s
-  --health-retries=10
+  --health-timeout=10s \
+  --health-retries=10 \
   chiefmikey/alpine-koa:latest
 ```
 
