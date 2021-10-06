@@ -1,7 +1,7 @@
 services:
   target:
     container_name: target
-    image: chiefmikey/koa:latest
+    image: chiefmikey/alpine-koa:latest
     networks:
       - inject-net
     ports:
@@ -24,6 +24,8 @@ services:
     depends_on:
       target:
         condition: service_healthy
+    env_file:
+      - inject.env
 
 networks:
   inject-net:
