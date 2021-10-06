@@ -23,7 +23,7 @@ Run the container on the same network as the target with environment variable
 ## Examples
 
 ```sh
-docker run --name inject -d -v /var/run/docker.sock:/var/run/docker.sock --network=inject-net --env-file inject.env chiefmikey/alpine-inject:latest`
+docker run --name inject -d -v /var/run/docker.sock:/var/run/docker.sock --cap-add NET_ADMIN--network=inject-net --env-file inject.env chiefmikey/alpine-inject:latest`
 ```
 
 ```yaml
