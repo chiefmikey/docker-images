@@ -38,7 +38,7 @@ Custom solutions built as Alpine-based Docker images
           >Alpine API</a
         >
       </td>
-      <td valign="top">An API template served with Koa routing to MongoDB</td>
+      <td valign="top">API template served with Koa routing to MongoDB</td>
     </tr>
     <tr>
       <td valign="top">
