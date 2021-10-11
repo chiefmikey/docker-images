@@ -6,7 +6,7 @@ using Mongoose
 _This image requires minimal configuration to launch an API connected to
 MongoDB_
 
-[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-koa)
+[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-api)
 
 ## Usage
 
