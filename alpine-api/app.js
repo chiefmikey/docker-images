@@ -24,8 +24,6 @@ app
   .use(index.routes())
   .use(index.allowedMethods());
 
-app.listen(port, () =>
-  console.log('Koa is listening on port', port),
-);
+app.listen(port, () => console.log('Koa is listening on port', port));
 
 export default app;
