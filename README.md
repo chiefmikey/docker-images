@@ -33,12 +33,12 @@ Custom solutions built as Alpine-based Docker images
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-koa"
+          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-api"
           target="_blank"
-          >Alpine Koa</a
+          >Alpine API</a
         >
       </td>
-      <td valign="top">Run a Koa server with a routing template</td>
+      <td valign="top">An API template served with Koa routing to MongoDB</td>
     </tr>
     <tr>
       <td valign="top">
