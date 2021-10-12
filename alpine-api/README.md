@@ -34,7 +34,6 @@ Include MongoDB URI environment variables `DB_CONTAINER`, `DB_PORT` and
 ```sh
 docker run -d \
   --name koa \
-  --restart unless-stopped \
   --health-cmd='node healthcheck.js' \
   --health-interval=10s \
   --health-timeout=10s \
