@@ -34,6 +34,7 @@ docker run -d \
 
 ```yaml
 #docker-compose.yaml
+
 services:
   inject:
     container_name: inject

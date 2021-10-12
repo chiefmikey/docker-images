@@ -37,6 +37,7 @@ docker run -d \
 
 ```yaml
 # docker-compose.yaml
+
 services:
   cassandra:
     container_name: cassandra
