@@ -1,1 +1,1 @@
-document.getElementById('app').innerHTML = 'Hullo Wurld';
+document.getElementById('app').innerHTML = `Serving Static Files ${new Date}`;
