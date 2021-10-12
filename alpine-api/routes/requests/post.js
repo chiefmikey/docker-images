@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import Router from '@koa/router';
-import { saveUser, savePost } from '../../db/queries/find.js';
+import { saveUser, savePost } from '../../db/queries/save.js';
 
 const router = new Router({ prefix: '/post' });
 
