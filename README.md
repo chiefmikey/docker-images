@@ -1,6 +1,6 @@
 # Docker Images
 
-Custom solutions built as Alpine-based Docker images
+Modular solutions built as Alpine-based Docker images
 
 <table>
   <thead>
