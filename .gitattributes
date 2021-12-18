@@ -52,3 +52,7 @@ alpine-craftcms/templates/**         linguist-documentation=true
 alpine-craftcms/web/**         linguist-documentation=true
 alpine-craftcms/craft         linguist-documentation=true
 
+alpine-api/**         linguist-documentation=false
+alpine-cassandra/**         linguist-documentation=false
+alpine-inject/**         linguist-documentation=false
+
