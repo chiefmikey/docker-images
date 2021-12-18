@@ -1,6 +1,6 @@
 import Router from '@koa/router';
-import postRouter from './requests/post.js';
-import getRouter from './requests/get.js';
+import postRouter from './requests/post';
+import getRouter from './requests/get';
 
 const router = new Router({ prefix: '/submit' });
 

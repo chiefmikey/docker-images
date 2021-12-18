@@ -50,3 +50,5 @@ alpine-craftcms/modules/**         linguist-documentation=true
 alpine-craftcms/storage/**         linguist-documentation=true
 alpine-craftcms/templates/**         linguist-documentation=true
 alpine-craftcms/web/**         linguist-documentation=true
+alpine-craftcms/craft         linguist-documentation=true
+

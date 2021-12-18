@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
-import modelUser from './models/User.js';
-import modelPost from './models/Post.js';
+
+import modelPost from './models/Post';
+import modelUser from './models/User';
 
 const container = 'mongo';
 const port = '27017';

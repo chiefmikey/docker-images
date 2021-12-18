@@ -1,22 +1,22 @@
+import cors from '@koa/cors';
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
-import cors from '@koa/cors';
 import serve from 'koa-static';
-import path from 'path';
+import path from 'node:path';
+
 import index from './routes/index.js';
 import './db/index.js';
 
 const port = process.env.PORT || 8080;
 
 const app = new Koa();
-
 app
   .use(
     cors({
       origin: '*',
-      methods: 'GET, POST',
-      allowedHeaders: '*',
-      exposedHeaders: '*',
+      allowMethods: 'GET,POST',
+      allowHeaders: '*',
+      exposeHeaders: '*',
     }),
   )
   .use(bodyParser())

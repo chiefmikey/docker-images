@@ -1,5 +1,49 @@
 {
+  "name": "docker-images",
+  "version": "0.1.0",
+  "description": "Docker images",
+  "scripts": {
+    "start": "node --loader ts-node/esm alpine-api/app.ts",
+    "test": "nodemon alpine-api/app.ts"
+  },
   "devDependencies": {
-    "@mikey-pro/style-guide": "^1.5.14"
+    "@mikey-pro/style-guide": "^3.1.9",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa__cors": "^3.1.0",
+    "@types/koa__router": "^8.0.11",
+    "@types/mongoose": "^5.11.97",
+    "eslint": "^8.5.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.1.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefmikey/docker-images.git"
+  },
+  "homepage": "https://github.com/chiefmikey/docker-images#readme",
+  "author": "me",
+  "bugs": {
+    "url": "https://github.com/chiefmikey/docker-images/issues"
+  },
+  "keywords": [
+    "docker-images",
+    "auth",
+    "authentication",
+    "server"
+  ],
+  "contributors": [
+    "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)"
+  ],
+  "prettier": "@mikey-pro/prettier-config",
+  "eslintConfig": {
+    "extends": "@mikey-pro/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@mikey-pro/stylelint-config"
   }
 }
