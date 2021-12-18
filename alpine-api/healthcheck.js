@@ -1,4 +1,4 @@
-import http from 'http';
+import http from 'node:http';
 
 const options = {
   host: 'localhost',
@@ -13,7 +13,7 @@ const request = http.request(options, (res) => {
     process.exit(1);
   }
 });
-request.on('error', function (error) {
+request.on('error', (error) => {
   console.log(`ERROR: ${error}`);
   process.exit(1);
 });

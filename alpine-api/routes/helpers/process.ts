@@ -1,3 +1,3 @@
-const process = (arg) => JSON.stringify(arg);
+const process = (argument) => JSON.stringify(argument);
 
 export default process;

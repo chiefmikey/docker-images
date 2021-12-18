@@ -7,7 +7,7 @@ export const findUser = async (input1, input2, input3) => {
       input2,
       input3,
     });
-    return await JSON.stringify(result);
+    return JSON.stringify(result);
   } catch (error) {
     console.error(error);
     return error;
@@ -21,7 +21,7 @@ export const findPost = async (input1, input2, input3) => {
       input2,
       input3,
     });
-    return await JSON.stringify(result);
+    return JSON.stringify(result);
   } catch (error) {
     console.error(error);
     return error;
