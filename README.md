@@ -38,7 +38,7 @@ Modular solutions built as Alpine-based Docker images
           >Alpine Node</a
         >
       </td>
-      <td valign="top">Node and nothing else</td>
+      <td valign="top">A blank slate Node environment</td>
     </tr>
     <tr>
       <td valign="top">
