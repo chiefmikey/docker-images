@@ -28,17 +28,17 @@ Modular solutions built as Alpine-based Docker images
           >Alpine Cassandra</a
         >
       </td>
-      <td valign="top">Initialize an Apache Cassandra database</td>
+      <td valign="top">Install and initialize Apache Cassandra</td>
     </tr>
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-api"
+          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-node"
           target="_blank"
-          >Alpine API</a
+          >Alpine Node</a
         >
       </td>
-      <td valign="top">API template served with Koa routing to MongoDB</td>
+      <td valign="top">Node and nothing else</td>
     </tr>
     <tr>
       <td valign="top">
@@ -48,7 +48,7 @@ Modular solutions built as Alpine-based Docker images
           >Alpine CraftCMS</a
         >
       </td>
-      <td valign="top">Serve a new CraftCMS installation</td>
+      <td valign="top">Install and serve CraftCMS</td>
     </tr>
   </tbody>
 </table>
