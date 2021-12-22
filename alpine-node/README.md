@@ -1,60 +1,60 @@
-# **Alpine API**
+# **Alpine Node**
 
-An API template served with Koa on a specified port routing data to MongoDB
-using Mongoose
+Bare minimum installation for a blank slate Node environment to run applications
 
-_This image requires minimal configuration to launch an API connected to
-MongoDB_
+_This image requires minimal configuration to install Node and run applications_
 
-[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-api)
+[Available on Docker Hub](https://hub.docker.com/r/chiefmikey/alpine-node)
 
 ## Usage
 
 ### Install
 
 ```shell
-docker pull chiefmikey/alpine-api:latest
+docker pull chiefmikey/alpine-node:latest
 ```
 
 ### Configure
 
-Run the container with a published port and environment variable `PORT`
-specifying where Koa should listen or the default (8080) will be used
+Copy or mount source to the container `app` directory
 
-The container includes `healthcheck.js` which can be run with node and used to
-monitor the port connection
+`npm ci && npm start` will run on every boot
 
-Mount a volume to `/api/client/public` to serve static files
-
-Include MongoDB URI environment variables `DB_CONTAINER`, `DB_PORT` and
-`DB_NAME` or the default (mongodb://mongo:27017/db) will be used
+Includes `healthcheck.js` which can be used to monitor the port connection
 
 ## Examples
 
 ```sh
 docker run -d \
-  --name koa \
+  --name app \
   --health-cmd='node healthcheck.js' \
   --health-interval=10s \
   --health-timeout=10s \
   --health-retries=10 \
-  -v ./client/public:/api/client/public \
-  --env \
-    PORT=3000 \
-    DB_CONTAINER=mongo \
-    DB_PORT=27017 \
-    DB_NAME=db \
-  -p 3000:3000 \
-  chiefmikey/alpine-api:latest
+  -p 8080:8080 \
+  -v .:/app \
+  chiefmikey/alpine-node:latest
+```
+
+```dockerfile
+# Dockerfile
+
+FROM chiefmikey/alpine-node:latest
+ENV PORT=8080
+EXPOSE 8080
+WORKDIR /app
+COPY . .
 ```
 
 ```yaml
 # docker-compose.yaml
 
 services:
-  api:
-    container_name: api
-    image: chiefmikey/alpine-api:latest
+  app:
+    container_name: app
+    image: chiefmikey/alpine-node:latest
+    volumes:
+      - .:/app
     healthcheck:
       test: node healthcheck.js
       interval: 10s
@@ -63,38 +63,6 @@ services:
     depends_on:
       mongo:
         condition: service_healthy
-    networks:
-      - db-net
-    volumes:
-      - ./client/public:/api/client/public
     ports:
-      - 3000:3000
-    environment:
-      - PORT=3000
-      - DB_CONTAINER=mongo
-      - DB_PORT=27017
-      - DB_NAME=db
-
-  mongo:
-    container_name: mongo
-    image: mongo:latest
-    healthcheck:
-      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/db --quiet
-      interval: 10s
-      timeout: 10s
-      retries: 10
-    networks:
-      - db-net
-    volumes:
-      - mongo-data:/data/db
-    environment:
-      - MONGO_INITDB_DATABASE=db
-    ports:
-      - 27017:27017
-
-volumes:
-  mongo-data:
-
-networks:
-  db-net:
+      - 8080:8080
 ```
