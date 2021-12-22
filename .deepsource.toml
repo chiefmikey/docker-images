@@ -1,5 +1,4 @@
 version = 1
-
 exclude_patterns = [
   "dist",
   "bundle.js",
@@ -11,17 +10,13 @@ name = "shell"
 enabled = true
 
 [[analyzers]]
-name = "javascript"
-enabled = true
-
-[[analyzers]]
 name = "docker"
 enabled = true
 
-  [analyzers.meta]
-  dockerfile_paths = [
-    "/alpine-inject",
-    "/alpine-craftcms",
-    "/alpine-api",
-    "/alpine-cassandra"
-  ]
+[analyzers.meta]
+dockerfile_paths = [
+  "/alpine-inject",
+  "/alpine-craftcms",
+  "/alpine-api",
+  "/alpine-cassandra"
+]
