@@ -60,9 +60,6 @@ services:
       interval: 10s
       timeout: 10s
       retries: 10
-    depends_on:
-      mongo:
-        condition: service_healthy
     ports:
       - 8080:8080
 ```
