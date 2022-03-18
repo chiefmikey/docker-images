@@ -54,6 +54,7 @@ services:
 
 ```env
 #inject.env
+
 INJECT_COMMAND="
   echo 'command 1';
   echo 'command 2';
