@@ -1,7 +1,7 @@
 services:
   target:
     container_name: target
-    image: chiefmikey/alpine-koa:latest
+    image: chiefmikey/alpine-node:latest
     networks:
       - inject-net
     ports:
