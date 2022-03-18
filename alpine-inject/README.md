@@ -61,5 +61,3 @@ INJECT_COMMAND="
   echo 'command 3';
 "
 ```
-
-### [View Demo](https://github.com/chiefmikey/docker-images/tree/main/alpine-inject/demo)
