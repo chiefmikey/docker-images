@@ -1,8 +1,0 @@
-baseUrl: $PRIMARY_SITE_URL
-handle: default
-hasUrls: true
-language: en-US
-name: 'Chia Decentral'
-primary: true
-siteGroup: ba448de6-a431-4036-a058-9157bf1a6b81 # Chia Decentral
-sortOrder: 1

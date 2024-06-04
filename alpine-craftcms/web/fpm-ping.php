@@ -1,1 +1,0 @@
-<?php echo '<p>php-fpm is working</p>'; ?>

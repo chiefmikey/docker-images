@@ -8,31 +8,31 @@
   },
   "devDependencies": {
     "@types/koa": "^2.15.0",
-    "@types/koa__cors": "^5.0.0",
-    "@types/koa__router": "^12.0.4",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa-static": "^4.0.4",
+    "@types/koa__cors": "^5.0.0",
+    "@types/koa__router": "^12.0.4",
     "@types/mongoose": "^5.11.97",
     "mikey-pro": "^7.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
-  "license": "MIT",
+  "homepage": "https://github.com/chiefmikey/docker-images#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chiefmikey/docker-images.git"
   },
-  "homepage": "https://github.com/chiefmikey/docker-images#readme",
-  "author": "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)",
   "bugs": {
     "url": "https://github.com/chiefmikey/docker-images/issues"
   },
+  "license": "MIT",
   "keywords": [
     "docker-images",
     "auth",
     "authentication",
     "server"
   ],
+  "author": "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)",
   "prettier": "@mikey-pro/prettier-config",
   "eslintConfig": {
     "extends": "@mikey-pro/eslint-config"

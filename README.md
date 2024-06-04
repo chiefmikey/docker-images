@@ -23,32 +23,12 @@ Modular solutions built as Alpine-based Docker images
     <tr>
       <td valign="top">
         <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-cassandra"
-          target="_blank"
-          >Alpine Cassandra</a
-        >
-      </td>
-      <td valign="top">Install and initialize Apache Cassandra</td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a
           href="https://github.com/chiefmikey/docker-images/tree/main/alpine-node"
           target="_blank"
           >Alpine Node</a
         >
       </td>
       <td valign="top">A blank slate Node environment</td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a
-          href="https://github.com/chiefmikey/docker-images/tree/main/alpine-craftcms"
-          target="_blank"
-          >Alpine CraftCMS</a
-        >
-      </td>
-      <td valign="top">Install and serve CraftCMS</td>
     </tr>
   </tbody>
 </table>
