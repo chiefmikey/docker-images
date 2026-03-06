@@ -1,6 +1,7 @@
 {
   "name": "docker-images",
   "version": "0.1.0",
+  "type": "module",
   "description": "Docker images",
   "scripts": {
     "start": "node --loader ts-node/esm alpine-api/app.ts",
@@ -33,11 +34,8 @@
     "server"
   ],
   "author": "Mikl Wolfe <wolfe@mikl.io> (https://mikl.io)",
-  "prettier": "@mikey-pro/prettier-config",
-  "eslintConfig": {
-    "extends": "@mikey-pro/eslint-config"
-  },
+  "prettier": "mikey-pro/prettier",
   "stylelint": {
-    "extends": "@mikey-pro/stylelint-config"
+    "extends": "mikey-pro/stylelint"
   }
 }
