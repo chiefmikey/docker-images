@@ -14,7 +14,7 @@
     "@types/koa__cors": "^5.0.1",
     "@types/koa__router": "^12.0.5",
     "@types/mongoose": "^5.11.97",
-    "mikey-pro": "^10.2.0",
+    "mikey-pro": "^10.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
