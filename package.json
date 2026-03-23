@@ -16,7 +16,7 @@
     "@types/mongoose": "^5.11.97",
     "mikey-pro": "^10.3.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "homepage": "https://github.com/chiefmikey/docker-images#readme",
   "repository": {
